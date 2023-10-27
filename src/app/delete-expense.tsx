@@ -1,8 +1,14 @@
-export default function DeleteExpense() {
+'use client'
+import { deleteExpense } from "./actions";
+
+export default function DeleteExpense({id}: {id:number}) {
+
+  const deleteEntry = async () => await deleteExpense(id)
 
   return (
     <button
       className="bg-red-600 hover:bg-red-700 text-white font-bold p-2 rounded"
+      onClick={deleteEntry}
     >
       <svg
         className="w-5 h-5 fill-white"
