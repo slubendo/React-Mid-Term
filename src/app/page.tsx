@@ -22,7 +22,7 @@ export default async function Home() {
       createdAt: result.createdAt,
     }));
   });
-
+ 
   return (
     <>
       <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-tr from-blue-500 to-purple-500 z-0"></div>

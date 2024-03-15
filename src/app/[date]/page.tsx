@@ -26,7 +26,7 @@ export default async function Home({params }: {params: {id: number}}) {
         console.log(err);
     }
 return(
-</div >
+<div >
 
         { expenses?.map((row) => (
             <div key={row.id}>
@@ -49,7 +49,6 @@ return(
                 </div>
             </div>
 
-</div >
         <div className="mt-8">
             <h2 className="text-2xl font-bold mb-2">Total Expenses</h2>
             <p className="text-lg font-bold">{sum?.toString()}</p>
